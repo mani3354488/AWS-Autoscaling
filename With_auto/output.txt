@@ -1,0 +1,11 @@
+Number of GET Requests			Average response time
+
+		10					similar to without autoscaling
+
+		100					similar to without autoscaling
+
+		1000				similar to without autoscaling
+
+		4000				similar to without autoscaling
+
+		6000						   4.31

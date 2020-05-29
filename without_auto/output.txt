@@ -1,0 +1,11 @@
+Number of GET Requests			Average response time
+
+		10							 0.7779587
+
+		100							 0.9134217
+
+		1000						 4.2120681
+
+		4000						 5.2431483
+
+		6000						 Saturation occured

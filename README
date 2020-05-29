@@ -1,0 +1,20 @@
+Without Autoscaling
+
+1.First create an EC2 instance on AWS(Amazon web services).
+2.Then Connect to your EC2 instance using SSH.
+3.Create your server.py file on the EC2 instance(please find the server.py file that i used in the report).
+4.Before running the server.py file,install flask(python web framework on AWS)
+5.Command to install flask is : $ sudo pip install flask
+6.After installing flask run the server.py as $ sudo python server.py
+7.In the client.py file replace the already existing IP with the IP of your EC2 instance.
+8.Also adjusts the number of requests,the message to be send etc in the client.py file.
+9.Run the client.py file while the server.py file is running on EC2 instance.
+
+
+
+With Autoscaling
+
+1.As we have already created the EC2 instance in the previous part.Create its AMI(bootable image).
+2.Now go to launch configurations and select the AMI created in the previous step.Also on the user data section write the shell command to run your server i.e sudo python /home/ubuntu/server.py this command will get executed everytime when a new instance is created.
+3.Now consider the auto scaling group with desire configurations like scaling policies ,min and max instances desired etc.
+4.Now configure the classical load balancer and set the target groups. 
